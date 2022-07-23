@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Refill Balance
+{% endblock %}
+
+{% block main %}
+    <h1>Refill Balance</h1>
+    <form action="/refill_balance" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="add_cash" placeholder="Add Cash" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Refill Balance</button>
+    </form>
+{% endblock %}
